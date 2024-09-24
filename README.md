@@ -156,4 +156,4 @@ To thoroughly test the security measures in place, I generated various alerts in
 
 ## Conclusion
 
-This project significantly enhanced our organization's security posture by integrating Blumira with our existing pfSense setup. Through deploying a sensor and honeypot, configuring dynamic blocklists, and actively monitoring network traffic, I gained valuable insights into threat detection and incident response. I hope this guide inspires you to implement similar solutions in your own environment to bolster security!
+This project significantly enhanced our organization's security posture by integrating Blumira with our existing pfSense setup. Through deploying a sensor and honeypot, configuring dynamic blocklists, and actively monitoring network traffic, I gained valuable insights into threat detection and incident response.
