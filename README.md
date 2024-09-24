@@ -22,6 +22,7 @@ Here’s a quick overview of the tools and technologies employed in this project
 - **pfBlockerNG**: pfSense package for creating IP and DNS blocklists.
 - **Ubuntu Server**: Operating system used to host the Blumira sensor.
 - **Docker**: Containerization platform used for deploying the Blumira sensor.
+- **Proxmox**: Virtualization software to run VMs
 
 ## Table of Contents
 
@@ -41,7 +42,7 @@ In this guide, I will walk you through the steps I took to integrate Blumira wit
 
 ## Setting Up the Ubuntu Server
 
-To get started, I set up an Ubuntu server that would host the Blumira sensor. Here’s how I did it:
+To get started, I set up an Ubuntu server on a VM that would host the Blumira sensor. Here’s how I did it:
 
 1. **Begin Installation**:
    - Follow the on-screen prompts to install Ubuntu Server with default settings.
