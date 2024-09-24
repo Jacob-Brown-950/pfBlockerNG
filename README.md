@@ -1,4 +1,4 @@
-# Blumira Integration Project
+# Integrating Blumira's Cloud Based SIEM with a pfSense Firewall
 
 ## Objective
 
