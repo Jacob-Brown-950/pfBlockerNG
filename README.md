@@ -30,8 +30,9 @@ Here’s a quick overview of the tools and technologies employed in this project
 3. [Building and Installing the Blumira Sensor](#building-and-installing-the-blumira-sensor)
 4. [Deploying the Honeypot](#deploying-the-honeypot)
 5. [Configuring pfBlockerNG](#configuring-pfblockerng)
-6. [Monitoring Network Traffic](#monitoring-network-traffic)
-7. [Conclusion](#conclusion)
+6. [Dynamic Blocklists](#dynamic-blocklists)
+7. [Monitoring Network Traffic](#monitoring-network-traffic)
+8. [Conclusion](#conclusion)
 
 ## Introduction
 
@@ -117,6 +118,16 @@ Next, I configured pfBlockerNG on the pfSense firewall to implement dynamic bloc
 
 4. **Configure DNSBL and URL Blocklists**:
    - Follow the same steps to configure DNS and URL blocklists using the URLs from Blumira.
+
+## Dynamic Blocklists
+
+After one month of using this SIEM, here are the dynamic blocklists generated:
+
+- **IPv4 Blocklist**: [View IPv4 Blocklist](https://github.com/Jacob-Brown-950/pfSense-plus-SIEM/blob/main/IPv4%20Blocklist.txt)
+- **Domain Blocklist**: [View Domain Blocklist](https://github.com/Jacob-Brown-950/pfSense-plus-SIEM/blob/main/DomainBlocklist.txt)
+- **URL Blocklist**: [View URL Blocklist](https://github.com/Jacob-Brown-950/pfSense-plus-SIEM/blob/main/URL%20Blocklist.txt)
+
+These lists are crucial for understanding the threats our network faces and improving our overall security posture.
 
 ## Monitoring Network Traffic
 
