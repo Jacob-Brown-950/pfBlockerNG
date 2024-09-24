@@ -128,8 +128,6 @@ After one month of using this SIEM, here are the dynamic blocklists generated:
 - **Domain Blocklist**: [View Domain Blocklist](https://github.com/Jacob-Brown-950/pfSense-plus-SIEM/blob/main/DomainBlocklist.txt)
 - **URL Blocklist**: [View URL Blocklist](https://github.com/Jacob-Brown-950/pfSense-plus-SIEM/blob/main/URL%20Blocklist.txt)
 
-These lists are crucial for understanding the threats our network faces and improving our overall security posture.
-
 ## Monitoring Network Traffic
 
 After deploying the sensor and configuring the blocklists, I began monitoring network traffic:
