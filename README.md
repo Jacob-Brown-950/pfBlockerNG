@@ -32,7 +32,8 @@ Here’s a quick overview of the tools and technologies employed in this project
 5. [Configuring pfBlockerNG](#configuring-pfblockerng)
 6. [Dynamic Blocklists](#dynamic-blocklists)
 7. [Monitoring Network Traffic](#monitoring-network-traffic)
-8. [Conclusion](#conclusion)
+8. [Alerts Generated](#alerts-generated)
+9. [Conclusion](#conclusion)
 
 ## Introduction
 
@@ -136,8 +137,24 @@ After deploying the sensor and configuring the blocklists, I began monitoring ne
 1. **Traffic Analysis**:
    - I observed significant traffic from our public-facing Unifi networks, with the firewall forwarding around 500 million logs this month.
 
-2. **Generating Alerts**:
-   - I generated alerts by conducting registry SAM dumps, performing Nmap and Advanced IP Scanner scans, and executing brute force attempts on an Active Directory account. Additionally, I stored fake passwords in a text file and granted unusual permissions to another user in our Microsoft 365 tenant.
+## Alerts Generated
+
+To thoroughly test the security measures in place, I generated various alerts intentionally. The following activities triggered alerts in the system:
+
+1. **Registry SAM Dumps**:
+   - I executed SAM registry dumps on Windows devices to extract password hashes. This activity was detected by the SIEM, generating alerts indicating possible malicious attempts to access sensitive information.
+
+2. **Nmap and Advanced IP Scanner Scans**:
+   - Conducted port scans using Nmap and Advanced IP Scanner on the network. These scans revealed open ports and active services, which were logged and flagged as potential reconnaissance activities.
+
+3. **Brute Force Attempts on Active Directory (AD) Account**:
+   - I performed brute force attempts against a specific AD account, attempting to guess the password. The SIEM alerted me to the multiple failed login attempts, signaling possible credential stuffing or unauthorized access attempts.
+
+4. **Storage of Fake Passwords**:
+   - I created a text file containing fake passwords and accessed it from various machines on the network. This action raised alarms due to unusual behavior, as the file's access patterns did not align with normal user activities.
+
+5. **Granting Unusual Permissions in Microsoft 365 Tenant**:
+   - I altered permissions for another user in our Microsoft 365 tenant, granting them access that deviated from standard operational roles. This change was detected and flagged by the SIEM, indicating potential insider threats or misconfigurations.
 
 ## Conclusion
 
